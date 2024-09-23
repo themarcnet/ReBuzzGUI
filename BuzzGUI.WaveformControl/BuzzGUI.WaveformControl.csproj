@@ -5,7 +5,8 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <BaseOutputPath>..\rel</BaseOutputPath>
+	  <BaseOutputPath>$(SolutionDir)..\build\$(Configuration)\BuzzGUI.WaveformControl\bin</BaseOutputPath>
+	  <IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\BuzzGUI.WaveformControl\obj</IntermediateOutputPath>
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
@@ -19,12 +20,26 @@
   </ItemGroup>
 	
   <ItemGroup>
-    <PackageReference Include="System.Reactive.Linq" Version="6.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BuzzGUI.Common\BuzzGUI.Common.csproj" />
     <ProjectReference Include="..\BuzzGUI.Interfaces\BuzzGUI.Interfaces.csproj" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <Reference Include="System.Reactive">
+      <HintPath>..\..\..\..\rebuzz\3rdparty\System.Reactive\System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.ClientProfile">
+      <HintPath>..\..\..\..\rebuzz\3rdparty\System.Reactive\System.Reactive.ClientProfile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\..\..\..\rebuzz\3rdparty\System.Reactive\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\..\..\..\rebuzz\3rdparty\System.Reactive\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\..\..\..\rebuzz\3rdparty\System.Reactive\System.Reactive.Linq.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

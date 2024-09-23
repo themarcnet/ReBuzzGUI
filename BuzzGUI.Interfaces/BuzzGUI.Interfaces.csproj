@@ -1,11 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
+	
+  <PropertyGroup>
+	<!-- existing property declarations are here -->
+	<IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\$(MSBuildProjectName)\obj</IntermediateOutputPath>
+  </PropertyGroup>
 
   <PropertyGroup>
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
-    <BaseOutputPath>..\rel</BaseOutputPath>
+    <BaseOutputPath>$(SolutionDir)..\build\$(Configuration)\$(MSBuildProjectName)\bin</BaseOutputPath>
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 

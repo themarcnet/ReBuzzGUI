@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+  
   <PropertyGroup>
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
@@ -8,19 +8,16 @@
     <Platforms>AnyCPU;x64</Platforms>
     <AssemblyName>ModernSequenceEditorHorizontal GUI</AssemblyName>
     <RootNamespace>WDE.ModernSequenceEditorHorizontal</RootNamespace>
-    <BaseOutputPath>..\rel</BaseOutputPath>
+    <BaseOutputPath>$(SolutionDir)..\build\$(Configuration)\ModernSequenceEditorHorizontal\bin</BaseOutputPath>
+		<IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\ModernSequenceEditorHorizontal\obj</IntermediateOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BuzzGUI.Common\BuzzGUI.Common.csproj" />
     <ProjectReference Include="..\BuzzGUI.Interfaces\BuzzGUI.Interfaces.csproj" />
     <ProjectReference Include="..\BuzzGUI.SequenceEditorExtended Rebuzz\BuzzGUI.SequenceEditorExtended Rebuzz.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="ModernSequenceEditor.Interfaces">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\ReBuzz\ModernSequenceEditor.Interfaces.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\ModernSequenceEditor.Interfaces\ModernSequenceEditor.Interfaces.csproj" />
+    <ProjectReference Include="..\ModernSequenceEditor\ModernSequenceEditor.csproj" />
   </ItemGroup>
 
 </Project>
