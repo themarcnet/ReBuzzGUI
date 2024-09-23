@@ -7,8 +7,9 @@
 
 	  <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>disable</ImplicitUsings>
-	  <BaseOutputPath>..\rel</BaseOutputPath>
-    <Platforms>AnyCPU;x64</Platforms>
+	<BaseOutputPath>$(SolutionDir)..\build\$(Configuration)\BuzzGUI.Common\bin</BaseOutputPath>
+	<IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\BuzzGUI.Common\obj</IntermediateOutputPath>
+	 <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -64,10 +65,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="SharpZipLib" Version="1.4.2" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\..\ReBuzz3rdParty\7zip\7zip.csproj" />
     <ProjectReference Include="..\BuzzGUI.Interfaces\BuzzGUI.Interfaces.csproj" />
   </ItemGroup>
 
@@ -183,6 +181,12 @@
 
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\ReBuzz3rdParty\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
