@@ -26,19 +26,19 @@
 	
   <ItemGroup>
     <Reference Include="System.Reactive">
-      <HintPath>..\..\..\..\rebuzz\3rdparty\System.Reactive\System.Reactive.dll</HintPath>
+      <HintPath>..\..\ReBuzz3rdParty\System.Reactive\System.Reactive.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.ClientProfile">
-      <HintPath>..\..\..\..\rebuzz\3rdparty\System.Reactive\System.Reactive.ClientProfile.dll</HintPath>
+      <HintPath>..\..\ReBuzz3rdParty\System.Reactive\System.Reactive.ClientProfile.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.Core">
-      <HintPath>..\..\..\..\rebuzz\3rdparty\System.Reactive\System.Reactive.Core.dll</HintPath>
+      <HintPath>..\..\ReBuzz3rdParty\System.Reactive\System.Reactive.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.Interfaces">
-      <HintPath>..\..\..\..\rebuzz\3rdparty\System.Reactive\System.Reactive.Interfaces.dll</HintPath>
+      <HintPath>..\..\ReBuzz3rdParty\System.Reactive\System.Reactive.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.Linq">
-      <HintPath>..\..\..\..\rebuzz\3rdparty\System.Reactive\System.Reactive.Linq.dll</HintPath>
+      <HintPath>..\..\ReBuzz3rdParty\System.Reactive\System.Reactive.Linq.dll</HintPath>
     </Reference>
   </ItemGroup>
 
