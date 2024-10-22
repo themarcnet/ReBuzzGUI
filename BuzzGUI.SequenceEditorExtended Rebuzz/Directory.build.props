@@ -1,5 +1,5 @@
 <Project>
     <PropertyGroup>
-        <MSBUildProjectExtensionsPath>$(SolutionDir)..\build\$(Configuration)\BuzzGUI.SequenceEditorExtended Rebuzz\obj</MSBUildProjectExtensionsPath>
+        <MSBUildProjectExtensionsPath>$(SolutionDir)build\$(Configuration)\BuzzGUI.SequenceEditorExtended Rebuzz\obj</MSBUildProjectExtensionsPath>
     </PropertyGroup>
 </Project>

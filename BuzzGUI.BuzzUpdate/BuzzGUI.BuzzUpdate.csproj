@@ -2,7 +2,7 @@
 
 <PropertyGroup>
   <!-- existing property declarations are here -->
-  <IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\$(MSBuildProjectName)\obj</IntermediateOutputPath>
+  <IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\obj</IntermediateOutputPath>
 </PropertyGroup>
 
   <PropertyGroup>
@@ -10,7 +10,7 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <BaseOutputPath>$(SolutionDir)..\build\$(Configuration)\$(MSBuildProjectName)\bin</BaseOutputPath>
+	  <BaseOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\bin</BaseOutputPath>
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 

@@ -7,8 +7,8 @@
 
 	  <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>disable</ImplicitUsings>
-	<BaseOutputPath>$(SolutionDir)..\build\$(Configuration)\BuzzGUI.Common\bin</BaseOutputPath>
-	<IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\BuzzGUI.Common\obj</IntermediateOutputPath>
+	<BaseOutputPath>$(SolutionDir)build\$(Configuration)\BuzzGUI.Common\bin</BaseOutputPath>
+	<IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\BuzzGUI.Common\obj</IntermediateOutputPath>
 	 <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 

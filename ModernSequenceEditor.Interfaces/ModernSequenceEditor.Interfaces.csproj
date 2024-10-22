@@ -5,8 +5,8 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <BaseOutputPath>$(SolutionDir)..\build\$(Configuration)\$(MSBuildProjectName)\bin</BaseOutputPath>
-	  <IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\$(MSBuildProjectName)\obj</IntermediateOutputPath>
+	  <BaseOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\bin</BaseOutputPath>
+	  <IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\obj</IntermediateOutputPath>
     <Platforms>AnyCPU;x64</Platforms>
 	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>

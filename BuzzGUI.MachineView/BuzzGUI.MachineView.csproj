@@ -5,8 +5,8 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <BaseOutputPath>$(SolutionDir)..\build\$(Configuration)\BuzzGUI.MachineView\bin</BaseOutputPath>
-	  <IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\BuzzGUI.MachineView\obj</IntermediateOutputPath>
+	  <BaseOutputPath>$(SolutionDir)build\$(Configuration)\BuzzGUI.MachineView\bin</BaseOutputPath>
+	  <IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\BuzzGUI.MachineView\obj</IntermediateOutputPath>
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 

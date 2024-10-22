@@ -8,8 +8,8 @@
     <Platforms>AnyCPU;x64</Platforms>
     <AssemblyName>ModernSequenceEditor GUI</AssemblyName>
     <RootNamespace>WDE.ModernSequenceEditor</RootNamespace>
-    <BaseOutputPath>$(SolutionDir)..\build\$(Configuration)\ModernSequenceEditor\bin</BaseOutputPath>
-	<IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\ModernSequenceEditor\obj</IntermediateOutputPath>
+    <BaseOutputPath>$(SolutionDir)build\$(Configuration)\ModernSequenceEditor\bin</BaseOutputPath>
+	<IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\ModernSequenceEditor\obj</IntermediateOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

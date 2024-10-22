@@ -6,8 +6,8 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <BaseOutputPath>$(SolutionDir)..\build\$(Configuration)\BuzzGUI.SequenceEditorExtended Rebuzz\bin</BaseOutputPath>
-	  <IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\BuzzGUI.SequenceEditorExtended Rebuzz\obj</IntermediateOutputPath>
+	  <BaseOutputPath>$(SolutionDir)build\$(Configuration)\BuzzGUI.SequenceEditorExtended Rebuzz\bin</BaseOutputPath>
+	  <IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\BuzzGUI.SequenceEditorExtended Rebuzz\obj</IntermediateOutputPath>
     <Platforms>AnyCPU;x64</Platforms>
     <AssemblyName>BuzzGUI.SequenceEditor</AssemblyName>
   </PropertyGroup>
