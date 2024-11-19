@@ -1,29 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-<PropertyGroup>
-  <!-- existing property declarations are here -->
+  <PropertyGroup>
   <IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\obj</IntermediateOutputPath>
 </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net9.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <BaseOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\bin</BaseOutputPath>
+    <BaseOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\bin</BaseOutputPath>
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
-
   <ItemGroup>
     <None Remove="rebuzzupdate.ico" />
   </ItemGroup>
-
   <ItemGroup>
     <Resource Include="rebuzzupdate.ico" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\BuzzGUI.Interfaces\BuzzGUI.Interfaces.csproj" />
   </ItemGroup>
-
 </Project>

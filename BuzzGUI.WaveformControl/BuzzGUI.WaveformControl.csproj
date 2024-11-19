@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net9.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -9,21 +8,18 @@
 	  <IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\BuzzGUI.WaveformControl\obj</IntermediateOutputPath>
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
-
-	<PropertyGroup>
-		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-		<GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
-	</PropertyGroup>
-	
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Remove="WaveCommandHelpers.cs" />
   </ItemGroup>
-	
   <ItemGroup>
     <ProjectReference Include="..\BuzzGUI.Common\BuzzGUI.Common.csproj" />
     <ProjectReference Include="..\BuzzGUI.Interfaces\BuzzGUI.Interfaces.csproj" />
   </ItemGroup>
-	
+
   <ItemGroup>
     <Reference Include="System.Reactive">
       <HintPath>..\..\ReBuzz3rdParty\System.Reactive\System.Reactive.dll</HintPath>
@@ -41,5 +37,4 @@
       <HintPath>..\..\ReBuzz3rdParty\System.Reactive\System.Reactive.Linq.dll</HintPath>
     </Reference>
   </ItemGroup>
-
 </Project>

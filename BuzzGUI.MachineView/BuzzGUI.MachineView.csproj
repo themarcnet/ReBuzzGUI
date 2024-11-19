@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net9.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -9,17 +8,15 @@
 	  <IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\BuzzGUI.MachineView\obj</IntermediateOutputPath>
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
-
-	<PropertyGroup>
-	<StartAction>Program</StartAction>
-	<StartProgram>myexecutable.exe</StartProgram>
-	</PropertyGroup>
+  <PropertyGroup>
+    <StartAction>Program</StartAction>
+    <StartProgram>myexecutable.exe</StartProgram>
+  </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BuzzGUI.Common\BuzzGUI.Common.csproj" />
     <ProjectReference Include="..\BuzzGUI.Interfaces\BuzzGUI.Interfaces.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <Reference Include="Jacobi.Vst.Core">
       <HintPath>..\..\ReBuzz3rdParty\Jacobi\Jacobi.Vst.Core.dll</HintPath>

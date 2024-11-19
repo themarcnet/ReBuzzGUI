@@ -1,18 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net9.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <BaseOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\bin</BaseOutputPath>
-	  <IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\obj</IntermediateOutputPath>
+    <BaseOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\bin</BaseOutputPath>
+    <IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\obj</IntermediateOutputPath>
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\BuzzGUI.Common\BuzzGUI.Common.csproj" />
     <ProjectReference Include="..\BuzzGUI.Interfaces\BuzzGUI.Interfaces.csproj" />
   </ItemGroup>
-
 </Project>
