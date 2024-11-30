@@ -9,5 +9,13 @@
 	<BaseOutputPath>$(SolutionDir)build\$(Configuration)\NativeMachineFrameworkUI\bin</BaseOutputPath>
 	<IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\NativeMachineFrameworkUI\obj</IntermediateOutputPath>
   </PropertyGroup>
+  
+  <Target Name="ForcePerformRestore" AfterTargets="BeforeBuild">	
+    <Exec Command="IF NOT EXIST  &quot;$(IntermediateOutputPath)..\project.assets.json&quot;  echo restore to $(IntermediateOutputPath)..\project.assets.json &amp;&amp;  dotnet restore &quot;$(ProjectName).csproj&quot; &amp;&amp; move &quot;build\$(ProjectName)\obj\*&quot; &quot;$(IntermediateOutputPath)..\&quot; &amp;&amp; rmdir /Q /S build	 " /> 
+  </Target>
+  
+  <Target Name="RemoveEmptyObj" AfterTargets="AfterBuild">
+    <Exec Command="IF EXIST obj rmdir obj" />
+  </Target>
 
 </Project>
